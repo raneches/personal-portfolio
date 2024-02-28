@@ -55,25 +55,25 @@
     padding: 20px;
   display: flex;
   justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
 }
   
-.main-content {
-  display: flex;
-  align-items: center;
-    text-align: center;
-}
+.image-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px; /* Adjust as needed */
+        }
 
-.main-content img {
- 
-    max-width: 100%;
-    height: auto;
-    margin-right: 20px;
-}
+.image-grid a {
+            margin: 10px; /* Adjust the spacing between images */
+        }
 
-.text-container {
-    text-align: left;
-}  
-      
+        .image-grid img {
+            max-width: 100%;
+            height: auto;
+        }
   </style>
     <link rel="stylesheet" href="styles.css">
 </head>
