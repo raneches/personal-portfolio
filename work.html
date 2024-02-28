@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rachel neches</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+      justify-content: center;
+}
+
+.sidebar {
+    color: #000;
+    width: 200px;
+    padding: 20px;
+}
+
+.sidebar h1 a {
+    margin-top: 0;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+  
+}
+    
+ .sidebar h1 a:hover {
+    color: #ccc; /* Change the hover color to a lighter grey */
+}   
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar nav ul li a:hover {
+    color: #ccc;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+  
+.main-content {
+  display: flex;
+  align-items: center;
+    text-align: center;
+}
+
+.main-content img {
+ 
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text-container {
+    text-align: left;
+}  
+      
+  </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1><a href="index.html">rachel neches</a></h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="work.html">work</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <!-- Content will be loaded dynamically based on the clicked link -->
+    </div>
+   <div class="content">
+        <div class="image-grid">
+            <a href="https://example.com/page1" target="_blank"><img src="image1.jpg" alt="Image 1"></a>
+            <a href="https://example.com/page2" target="_blank"><img src="image2.jpg" alt="Image 2"></a>
+            <a href="https://example.com/page3" target="_blank"><img src="image3.jpg" alt="Image 3"></a>
+            <!-- Add more images with appropriate links -->
+            <!-- Ensure each image is wrapped in an <a> tag with the desired href attribute -->
+        </div>
+    </div>
+</body>
+</html>
