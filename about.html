@@ -3,23 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file if you have one -->
+    <title>about me</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+      justify-content: center;
+}
+
+.sidebar {
+    color: #000;
+    width: 200px;
+    padding: 20px;
+}
+
+.sidebar h1 a {
+    margin-top: 0;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+  
+}
+    
+ .sidebar h1 a:hover {
+    color: #ccc; /* Change the hover color to a lighter grey */
+}   
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar nav ul li a:hover {
+    color: #ccc;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+  
+.main-content {
+  display: flex;
+  align-items: center;
+    text-align: center;
+}
+
+.main-content img {
+ 
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text-container {
+    text-align: left;
+}  
+      
+  </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>About Me</h1>
+    <div class="sidebar">
+        <h1><a href="index.html">rachel neches</a></h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <!-- Add more navigation links as needed -->
+                <li><a href="about.html">about</a></li>
+                <li><a href="work.html">work</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
     <div class="content">
-        <h2>Welcome to My About Page</h2>
-        <p>This is where you can write about yourself, your background, skills, interests, and more.</p>
+        <!-- Content will be loaded dynamically based on the clicked link -->
+    </div>
+   <div class="content">
+        <div class="main-content">
+            <img src="bodega_cat_gus_corona.jpg" alt="Your Image">
+            <div class="text-container">
+                <h2>Text Next to Image</h2>
+                <p>This is some text next to the image.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
