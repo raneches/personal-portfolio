@@ -60,11 +60,11 @@
 }
   
 .image-grid {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            max-width: 800px; /* Adjust as needed */
-        }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px); /* Each column is 200px wide */
+    gap: 10px; /* Spacing between grid items */
+}
+
 
 .image-grid a {
             margin: 40px; /* Adjust the spacing between images */
