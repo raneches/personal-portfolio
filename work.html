@@ -90,6 +90,34 @@
           color: #E9967A;
     text-decoration: none;
       }
+
+      .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+      
   </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -110,6 +138,8 @@
         <div class="image-grid">
             <a href="https://nycfuture.org/pdf/CUF_StateoftheChains_2023.pdf" target="_blank"><img src="portfoliopics/state-of-the-chains-2023-cover.png" alt="state of the chains 2023">
             <h1>State of the Chains 2023</h1><p>Center for an Urban Future</p></a>
+                  <div class="middle">
+                <div class="text">John Doe</div>
             <a href="files/April 2022 Combined Monthly Report_0.pdf" target="_blank"><img src="portfoliopics/feb tsa.png" alt="Monthly Report Times Square Alliance">
             <h1>Monthly Economic Indicator Report</h1><p>Times Square Alliance</p></a>
             <a href="https://nycfuture.org/pdf/CUF_StateoftheChains_2023.pdf" target="_blank"><img src="portfoliopics/state-of-the-chains-2023-cover.png" alt="state of the chains 2023"></a>
