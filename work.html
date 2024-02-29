@@ -91,6 +91,34 @@
     text-decoration: none;
       }
 
+
+      
+      .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .image-grid a:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-content {
+            z-index: 1;
+        }
+
+      
       
   </style>
     <link rel="stylesheet" href="styles.css">
@@ -111,6 +139,8 @@
    <div class="content">
         <div class="image-grid">
             <a href="https://nycfuture.org/pdf/CUF_StateoftheChains_2023.pdf" target="_blank"><img src="portfoliopics/state-of-the-chains-2023-cover.png" alt="state of the chains 2023">
+                  <div class="overlay">
+                    <div class="overlay-content">
             <h1>State of the Chains 2023</h1><p>Center for an Urban Future</p></a>
             <a href="files/April 2022 Combined Monthly Report_0.pdf" target="_blank"><img src="portfoliopics/feb tsa.png" alt="Monthly Report Times Square Alliance">
             <h1>Monthly Economic Indicator Report</h1><p>Times Square Alliance</p></a>
