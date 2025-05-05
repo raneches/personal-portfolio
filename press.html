@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>press - raneches</title>
+  <title>press - rachel neches</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,47 +12,48 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
+      padding: 0;
       display: flex;
       min-height: 100vh;
     }
 
-  .sidebar {
-    color: #000;
-    width: 200px;
-    padding: 20px;
-}
+    .sidebar {
+      color: #000;
+      width: 200px;
+      padding: 20px;
+      border-right: 1px solid #eee;
+    }
 
-.sidebar h1 a {
-    margin-top: 0;
-    font-size: 24px;
-    color: #000;
-    text-decoration: none;
-  
-}
-    
- .sidebar h1 a:hover {
-    color: #ccc; /* Change the hover color to a lighter grey */
-}   
+    .sidebar h1 a {
+      margin-top: 0;
+      font-size: 24px;
+      color: #000;
+      text-decoration: none;
+    }
 
-.sidebar nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+    .sidebar h1 a:hover {
+      color: #ccc;
+    }
 
-.sidebar nav ul li {
-    margin-bottom: 10px;
-}
+    .sidebar nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-.sidebar nav ul li a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .sidebar nav ul li {
+      margin-bottom: 10px;
+    }
 
-.sidebar nav ul li a:hover {
-    color: #ccc;
-}
-    
+    .sidebar nav ul li a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .sidebar nav ul li a:hover {
+      color: #ccc;
+    }
+
     .content {
       flex: 1;
       padding: 40px;
@@ -62,9 +63,22 @@
       margin-top: 0;
     }
 
-    .content p {
-      max-width: 600px;
-      line-height: 1.6;
+    .content ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .content li {
+      margin-bottom: 10px;
+    }
+
+    .content a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .content a:hover {
+      color: #888;
     }
   </style>
 </head>
@@ -79,6 +93,7 @@
       </ul>
     </nav>
   </div>
+
   <div class="content">
     <h2>Press</h2>
     <ul>
