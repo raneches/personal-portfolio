@@ -17,45 +17,48 @@
     }
 
     .sidebar {
-     color: #000;
+    color: #000;
     width: 200px;
     padding: 20px;
-    }
+}
 
-    .sidebar h1 a {
-     margin-top: 0;
+.sidebar h1 a {
+    margin-top: 0;
     font-size: 24px;
     color: #000;
     text-decoration: none;
-    }
+  
+}
+    
+ .sidebar h1 a:hover {
+    color: #ccc; /* Change the hover color to a lighter grey */
+}   
 
-    .sidebar h1 a:hover {
-      color: #ccc;
-    }
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-    .sidebar nav ul {
-      list-style: none;
-      padding: 0;
-    }
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
 
-    .sidebar nav ul li {
-      margin-bottom: 10px;
-    }
+.sidebar nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    .sidebar nav ul li a {
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.sidebar nav ul li a:hover {
+    color: #ccc;
+}
 
-    .sidebar nav ul li a:hover {
-      color: #ccc;
-    }
-
-    .content {
-      flex: 1;
-      padding: 40px;
-    }
+.content {
+    flex: 1;
+    padding: 20px;
+  display: flex;
+  justify-content: center;
+}
 
     .content h2 {
       margin-top: 0;
