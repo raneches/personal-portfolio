@@ -106,6 +106,40 @@
   flex: 1;
 }
 
+    .press-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: 40px;
+  row-gap: 30px;
+  align-items: start;
+}
+
+.report-name {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 4px;
+}
+
+.press-list ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.press-list li {
+  margin-bottom: 10px;
+}
+
+.press-list a {
+  color: black;
+  text-decoration: none;
+}
+
+.press-list a:visited {
+  color: grey;
+}
+
+
   </style>
 </head>
 <body>
@@ -123,12 +157,23 @@
     </div>
     <div class="content">
       <h2>press</h2>
-       <div class="content-layout">
-    <div class="report-column">
-      New York City’s Green Economy Opportunity
+        <div class="press-grid">
+    <!-- Report 1 -->
+    <div class="report-name">New York City’s Green Economy Opportunity</div>
+    <div class="press-list">
+      <ul>
+        <li><a href="#"><strong>More Long Island seniors facing poverty, statewide study shows</strong><div>Newsday, June 2025</div></a></li>
+        <li><a href="#"><strong>The Growing Crisis of Senior Poverty in New York</strong><div>BronxNet, March 2025</div></a></li>
+      </ul>
     </div>
-    <div class="press-column"> 
-<ul>
+     
+    <!-- Report 2 -->
+    <div class="report-name">It’s Time to Launch SUNY Reconnect</div>
+    <div class="press-list">
+      <ul>
+        <li><a href="#"><strong>The push to get 118,000 Western New Yorkers back into college classrooms</strong><div>Buffalo News, March 2025</div></a></li>
+      </ul>
+    </div>     
 
   <li>
     <a href="#" target="_blank" rel="noopener noreferrer">
