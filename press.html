@@ -87,6 +87,25 @@
 .content ul li a:visited {
   color: grey;
 }
+
+    .content-layout {
+  display: flex;
+  gap: 40px;
+}
+
+.report-column {
+  width: 220px;
+  flex-shrink: 0;
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.press-column {
+  flex: 1;
+}
+
   </style>
 </head>
 <body>
@@ -104,7 +123,11 @@
     </div>
     <div class="content">
       <h2>press</h2>
-      
+       <div class="content-layout">
+    <div class="report-column">
+      New York City’s Green Economy Opportunity
+    </div>
+    <div class="press-column"> 
 <ul>
 
   <li>
@@ -302,7 +325,7 @@
 </ul>
 
   
-
+    </div>
 
     </div>
   </div>
